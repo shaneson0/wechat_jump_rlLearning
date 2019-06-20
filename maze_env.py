@@ -429,6 +429,7 @@ class env(object):
             return 300
         else:
             return -1 * (error_distance)
+
         # RawReward = 100.0 / (abs(target_distance - actual_distance) + 1)
         # # 力度不够，需要调高力度
         # if target_distance > actual_distance:
@@ -535,6 +536,7 @@ class env(object):
             m_score = int(m_score)
             print('score:{}'.format(m_score))
         return m_score
+
     def observeDistance(self):
         # 截屏，发现当前的状态，截屏为autojump.png
         self.pull_screenshot()
